@@ -47,7 +47,7 @@ function Functions:swapWeaponSkins(normalWeaponName, skinName, State)
             end
 
             normalWeapon:ClearAllChildren()
-            for , child in pairs(skin:GetChildren()) do
+            for _, child in pairs(skin:GetChildren()) do
                 local newChild = child:Clone()
                 newChild.Parent = normalWeapon
             end
@@ -76,7 +76,7 @@ function Functions:swapWeaponWraps(normalWeaponName, WrapName, State)
             end
 
             normalWeapon:ClearAllChildren()
-            for , child in pairs(Wrap:GetChildren()) do
+            for _, child in pairs(Wrap:GetChildren()) do
                 local newChild = child:Clone()
                 newChild.Parent = normalWeapon
             end
